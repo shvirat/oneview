@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-image: -webkit-linear-gradient(left, rgba(0, 91, 144, 0.53), rgba(130, 0, 72, 0.5)), url(images/bg-01.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+/* .block{
+    background: -webkit-linear-gradient(left, rgba(0, 91, 144, 0.53), rgba(130, 0, 72, 0.5));
+    opacity: 10%;
+    z-index: 0;
+    position: relative;
+    top: 0;
+} */
+.main{
+
+    z-index: 1;
+    background-color: white;
+    width: 415px;
+    height: 505px;
+    margin: 55px auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 10px;
+    padding: 0px 55px;
+}
+.text{
+    font-size: 30px;
+    color: #77120c;
+    cursor: default;
+    padding-bottom: 10px;
+}
+.roll{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.roll input{
+    width: 98%;
+    height: 55px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.603);
+    border-radius: 50px;
+    padding: 0px 20px;
+    font-size: 16px;
+    color: #77120c;
+    font-weight: 600;
+    text-align: center;
+}
+
+.roll input::placeholder{
+    color: #360a08;
+    font-weight: 400;
+}
+
+.bottom{
+    font-size: 11.5px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.604);
+    cursor: default;
+}
+.bottom div{
+padding-top: 2px;
+}
+
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.no-spinner {
+    -moz-appearance: textfield;
+}
+button{
+    width: 98%;
+    height: 55px;
+    background-color: #77120c;
+    border: none;
+    color: white;
+    font-size: 16px;  
+    border-radius: 50px; 
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        width: 88vw;
+        height: 58vh;
+        margin: 12vh auto;
+        padding: 0px 30px;
+        gap: 15px;
+    }
+}
