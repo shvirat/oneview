@@ -86,6 +86,7 @@ padding-top: 2px;
 }
 
 .no-spinner {
+    appearance: textfield;
     -moz-appearance: textfield;
 }
 button{
